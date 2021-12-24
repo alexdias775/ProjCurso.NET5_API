@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "wUcbA84GROGoLen6gBy5PYGjdEO1BTbxhGEpsw8ry8eVG3Wm+BwgmTDz3EKNSRxpoBZ9/txzz91qJQKlhHUt5w==",
+  "dgSpecHash": "yvM/M3XPI9Fg03oaDSwsiCv6WH2y60haQ7JYyz2r2oSlnmWacgfSG0okQs1Qj7i2nyy1w3lDPsnhumcf2Q/YBg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\NSYS-CDS-0201\\Documents\\Projetos\\ASP.Net\\FIlmesAPI\\FilmesAPI.csproj",
+  "projectFilePath": "C:\\Users\\NSYS-CDS-0201\\Documents\\Projetos\\ProjCurso.NET5_API\\ProjParte03\\FIlmesAPI\\FilmesAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\NSYS-CDS-0201\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\NSYS-CDS-0201\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\NSYS-CDS-0201\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\NSYS-CDS-0201\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
+    "C:\\Users\\NSYS-CDS-0201\\.nuget\\packages\\fluentresults\\3.1.0\\fluentresults.3.1.0.nupkg.sha512",
     "C:\\Users\\NSYS-CDS-0201\\.nuget\\packages\\google.protobuf\\3.14.0\\google.protobuf.3.14.0.nupkg.sha512",
     "C:\\Users\\NSYS-CDS-0201\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\NSYS-CDS-0201\\.nuget\\packages\\k4os.compression.lz4\\1.2.6\\k4os.compression.lz4.1.2.6.nupkg.sha512",
@@ -152,7 +153,8 @@
     "C:\\Users\\NSYS-CDS-0201\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\NSYS-CDS-0201\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\NSYS-CDS-0201\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\NSYS-CDS-0201\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\NSYS-CDS-0201\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\NSYS-CDS-0201\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
   ],
   "logs": []
 }

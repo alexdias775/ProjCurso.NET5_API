@@ -6,7 +6,7 @@ namespace FilmesAPI.Models
     public class Endereco
     {
         [Key]
-        [Required] 
+        [Required]
         public int Id { get; set; }
         public string Logradouro { get; set; }
         public string Bairro { get; set; }
@@ -14,4 +14,5 @@ namespace FilmesAPI.Models
         [JsonIgnore]
         public virtual Cinema Cinema { get; set; }
     }
+
 }
