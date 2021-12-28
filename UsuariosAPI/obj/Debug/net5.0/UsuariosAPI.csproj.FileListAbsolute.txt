@@ -54,3 +54,4 @@ C:\Users\NSYS-CDS-0201\Documents\Projetos\ProjCurso.NET5_API\ProjParte03\Usuario
 C:\Users\NSYS-CDS-0201\Documents\Projetos\ProjCurso.NET5_API\ProjParte03\UsuariosAPI\obj\Debug\net5.0\ref\UsuariosAPI.dll
 C:\Users\NSYS-CDS-0201\Documents\Projetos\ProjCurso.NET5_API\ProjParte03\UsuariosAPI\obj\Debug\net5.0\UsuariosAPI.pdb
 C:\Users\NSYS-CDS-0201\Documents\Projetos\ProjCurso.NET5_API\ProjParte03\UsuariosAPI\obj\Debug\net5.0\UsuariosAPI.genruntimeconfig.cache
+C:\Users\NSYS-CDS-0201\Documents\Projetos\ProjCurso.NET5_API\ProjParte03\UsuariosAPI\bin\Debug\net5.0\FluentResults.dll

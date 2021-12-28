@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6HHeIzhX/PLf96e74s+gohg5R1/XFTwuEZzi+qeliwkPb9y/FBTV0Xlu0SAKqcT+fcLSS3um9w1AnSR88+z/hQ==",
+  "dgSpecHash": "2Zbjm+BFyNK5bpOJAgY7jS19tgx7nSWcUJZO1MHpx/06sAwD2MnoduuLfWgksX2i7HK3FfZ/CEKmhjBK5dw1QA==",
   "success": true,
   "projectFilePath": "C:\\Users\\NSYS-CDS-0201\\Documents\\Projetos\\ProjCurso.NET5_API\\ProjParte03\\UsuariosAPI\\UsuariosAPI.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\NSYS-CDS-0201\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
     "C:\\Users\\NSYS-CDS-0201\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\NSYS-CDS-0201\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
+    "C:\\Users\\NSYS-CDS-0201\\.nuget\\packages\\fluentresults\\2.5.0\\fluentresults.2.5.0.nupkg.sha512",
     "C:\\Users\\NSYS-CDS-0201\\.nuget\\packages\\google.protobuf\\3.14.0\\google.protobuf.3.14.0.nupkg.sha512",
     "C:\\Users\\NSYS-CDS-0201\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\NSYS-CDS-0201\\.nuget\\packages\\k4os.compression.lz4\\1.1.11\\k4os.compression.lz4.1.1.11.nupkg.sha512",

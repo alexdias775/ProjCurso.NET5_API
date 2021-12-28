@@ -14,6 +14,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using UsuariosAPI.Data;
+using UsuariosAPI.Services;
 
 namespace UsuariosAPI
 {
@@ -32,11 +33,28 @@ namespace UsuariosAPI
             services.AddDbContext<UserDbContext>(options =>
                 options.UseMySQL(Configuration.GetConnectionString("UsuarioConnection"))
             );
-            services.AddIdentity<IdentityUser<int>, IdentityRole<int>>()
+            services
+                .AddIdentity<IdentityUser<int>, IdentityRole<int>>()
                 .AddEntityFrameworkStores<UserDbContext>();
+            services.AddScoped<CadastroService, CadastroService>();
+            services.AddScoped<LoginService, LoginService>();
             services.AddControllers();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
         }
+        /*Como dito anteriormente, é possível definir quais são os requisitos de uma senha utilizando o Identity. 
+         * Por padrão, as senhas devem conter um caractere maiúsculo, um minúsculo, um dígito e um caractere não 
+         * alfanumérico, além de seis caracteres no mínimo.Manipulando a nossa classe Startup em nosso método Con-
+         * figureServices(), é possível alterar este comportamento padrão, por exemplo:
+            services.Configure<IdentityOptions>(options =>
+            {
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequiredLength = 8;
+            });
+            Mais exemplos e definições podem ser consultadas através da
+            https://docs.microsoft.com/pt-br/aspnet/core/security/authentication/identity-configuration?view=aspnetcore-5.0#password
+         * oficial.
+         */
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -44,8 +62,6 @@ namespace UsuariosAPI
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "UsuariosAPI v1"));
             }
 
             app.UseHttpsRedirection();

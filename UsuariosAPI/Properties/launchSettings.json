@@ -17,7 +17,8 @@
     },
     "UsuariosAPI": {
       "commandName": "Project",
-      "applicationUrl": "https://localhost:5001;http://localhost:5000",
+      "dotnetRunMessages": "true",
+      "applicationUrl": "https://localhost:6001;http://localhost:6000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
