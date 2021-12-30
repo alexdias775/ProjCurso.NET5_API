@@ -52,6 +52,10 @@
               "target": "Package",
               "version": "[2.5.0, )"
             },
+            "MailKit": {
+              "target": "Package",
+              "version": "[2.14.0, )"
+            },
             "Microsoft.AspNetCore.Identity": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -78,6 +82,10 @@
               "target": "Package",
               "version": "[5.0.5, )"
             },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[2.14.0, )"
+            },
             "MySql.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.3, )"
@@ -85,6 +93,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.15.0, )"
             }
           },
           "imports": [
