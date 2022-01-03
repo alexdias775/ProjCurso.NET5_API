@@ -31,14 +31,14 @@ namespace UsuariosAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<UserDbContext>(options =>
-                options.UseMySQL(Configuration.GetConnectionString("UsuarioConnection"))
-            );
+                options.UseMySQL(Configuration.GetConnectionString("UsuarioConnection")));
             services
-                .AddIdentity<IdentityUser<int>, IdentityRole<int>>(
-                opt => opt.SignIn.RequireConfirmedEmail = true
+                .AddIdentity<IdentityUser<int>, IdentityRole<int>>(opt =>
+                {
+                    opt.SignIn.RequireConfirmedEmail = true;
                 /*Nesse ponto se fala que se tem uma opção e nessa opção tem SignIn
                 que requer que o campo email seja um campo obrigatório*/
-                )
+                })
                 .AddEntityFrameworkStores<UserDbContext>()
                 .AddDefaultTokenProviders();
             /*TokenProvider do próprio Identity usado para gerar tokens, resetar senhas, alterar email 
@@ -48,6 +48,7 @@ namespace UsuariosAPI
             services.AddScoped<LogoutService, LogoutService>();
             services.AddScoped<LoginService, LoginService>();
             services.AddScoped<TokenService, TokenService>();
+            services.AddScoped<EmailService, EmailService>();
             services.AddControllers();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
         }

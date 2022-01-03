@@ -4,9 +4,11 @@ using Microsoft.AspNetCore.Identity;
 using System;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web;
 using UsuariosAPI.Data.Dtos;
 using UsuariosAPI.Data.Requests;
 using UsuariosAPI.Models;
+using System.Collections.Generic;
 
 namespace UsuariosAPI.Services
 {
@@ -37,12 +39,13 @@ namespace UsuariosAPI.Services
             if (resultadoIdentity.Result.Succeeded) 
             {
                 //gerando código de confirmação de cadastro
-                string code = _userManager
+                var code = _userManager
                     .GenerateEmailConfirmationTokenAsync(usuarioIdentity).Result;
+                var encodedCode = HttpUtility.UrlDecode(code);
 
                 //Lógica para enviar email para o usuario que acabou de ser cadastrado
                 _emailService.EnviarEmail(new[] { usuarioIdentity.Email }, //parâmetros necessários para quando se quer enviar um email 
-                    "Link de Ativação", usuarioIdentity.Id, code);
+                    "Link de Ativação", usuarioIdentity.Id, encodedCode);
   
                 return Result.Ok()
                     .WithSuccess(code);

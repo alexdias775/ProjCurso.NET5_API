@@ -24,7 +24,7 @@ namespace UsuariosAPI.Models
             Destinatario.AddRange(destinatario.Select(d => new MailboxAddress(d)));
             /**/
             Assunto = assunto;
-            Conteudo = $"http://localhost:6000/ativa?UsuarioId={usuarioId}&CodigoDeAtivacao={codigo}";      
+            Conteudo = $"http://localhost:6000/ativa?UsuarioId={usuarioId}&CodigoDeAtivacao={codigo}";
         }
     }
 }
